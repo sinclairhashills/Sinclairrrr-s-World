@@ -1,4 +1,5 @@
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinclairrrr‘s World - Personal Website</title>
@@ -25,7 +26,7 @@
                         pixelLightBlue: '#87CEFA',
                         pixelLightGreen: '#98FB98',
                         pixelOrange: '#FFA500',
-                        highlightBlue: '#356C8D' // 保持原有配置不变
+                        highlightBlue: '#356C8D'
                     },
                     fontFamily: {
                         pixel: ['"Press Start 2P"', 'monospace', 'sans-serif']
@@ -94,17 +95,15 @@
             .home-icon-container:hover {
                 transform: scale(1.1);
             }
-            /* 添加闪烁动画 */
             @keyframes pulse-highlight {
                 0%, 100% { opacity: 1; }
                 50% { opacity: 0.7; }
             }
             .highlight-text {
-                color: #FFB057; /* 仅修改此处颜色为#FFB057 */
+                color: #FFB057;
                 animation: pulse-highlight 2s infinite;
                 font-weight: bold;
             }
-            /* 文件夹样式 */
             .pixel-folder {
                 position: relative;
                 width: 64px;
@@ -134,7 +133,6 @@
                 border-bottom: none;
                 border-radius: 4px 4px 0 0;
             }
-            /* 音乐播放器进度条样式 */
             .progress-bar {
                 position: relative;
                 height: 2px;
@@ -157,56 +155,42 @@
                 border-radius: 50%;
                 box-shadow: 0 0 0 2px theme('colors.pixelBlack');
             }
-            /* 统计数字按钮样式 */
             .count-btn {
                 @apply bg-pixelBlack text-pixelWhite w-6 h-6 flex items-center justify-center px-0 py-0 text-sm;
             }
             .stats-text {
                 @apply text-center mb-6;
             }
-            /* 调整数字样式 - 使用醒目的亮黄色 */
             .checkerboard-text {
-                color: #FFD700; /* 改为亮黄色，更醒目 */
+                color: #FFD700;
                 text-shadow: 2px 2px 0 theme('colors.pixelBlack');
                 font-weight: bold;
             }
         }
     </style>
     
-    <!-- 像素字体 -->
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body class="bg-pixelBeige font-pixel text-pixelBlack min-h-screen overflow-x-hidden">
-    <!-- 页面容器 -->
     <div id="page-container" class="relative">
-        <!-- 首页 -->
         <div id="homepage" class="page active min-h-screen flex flex-col items-center justify-center p-4">
-            <!-- 像素风格装饰元素 - 预留图片位置 -->
             <div class="absolute top-10 left-10 hidden md:block">
-                <!-- 替换为DOTOWN图片 1 -->
                 <div class="w-16 h-16 bg-pixelRed pixel-border flex items-center justify-center">
-                    <!-- 此处替换为你的DOTOWN图片1路径 -->
-                            <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/event_snowman_01.png" alt="雪人" class="w-full h-full object-contain pixel-icon">
+                    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/event_snowman_01.png" alt="雪人" class="w-full h-full object-contain pixel-icon">
                 </div>
             </div>
             <div class="absolute top-20 right-10 hidden md:block">
-                <!-- 替换为DOTOWN图片 2 -->
                 <div class="w-12 h-12 bg-pixelBlue pixel-border flex items-center justify-center">
-                    <!-- 此处替换为你的DOTOWN图片2路径 -->
-                     <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/sports_bicycle_02.png" alt="骑自行车" class="w-full h-full object-contain pixel-icon">
+                    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/sports_bicycle_02.png" alt="骑自行车" class="w-full h-full object-contain pixel-icon">
                 </div>
             </div>
             <div class="absolute bottom-10 left-1/4 hidden md:block">
-                <!-- 替换为DOTOWN图片 3 -->
                 <div class="w-10 h-10 bg-pixelGreen pixel-border flex items-center justify-center">
-                    <!-- 此处替换为你的DOTOWN图片3路径 -->
                     <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/03/guest_rabbit_01.png" alt="兔子" class="w-full h-full object-contain pixel-icon">
                 </div>
             </div>
             <div class="absolute bottom-20 right-1/4 hidden md:block">
-                <!-- 替换为DOTOWN图片 4 -->
                 <div class="w-14 h-14 bg-pixelYellow pixel-border flex items-center justify-center">
-                    <!-- 此处替换为你的DOTOWN图片4路径 -->
                     <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/food_grape_01.png" alt="葡萄" class="w-full h-full object-contain pixel-icon">
                 </div>
             </div>
@@ -214,30 +198,23 @@
             <div class="text-center mb-12 relative z-10">
                 <h1 class="text-3xl md:text-5xl text-pixelRed pixel-text mb-8 animate-pulse">Sinclairrrr‘s World</h1>
                 
-                <!-- 主页图标和入口 -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-10">
-                    <!-- About Me 入口 -->
                     <div class="home-icon-container">
                         <div class="w-32 h-32 bg-pixelWhite pixel-border mx-auto flex items-center justify-center mb-4 cursor-pointer" onclick="navigateTo('about')">
-                            <!-- 替换为你的About Me DOTOWN图片 -->
                             <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/person_city_girl_01.png" alt="城市女孩像素图，代表关于我" class="w-full h-full object-contain pixel-icon">
                         </div>
                         <button class="pixel-button bg-pixelRed text-pixelWhite px-6 py-3 text-sm sm:text-base" onclick="navigateTo('about')">About Me</button>
                     </div>
                     
-                    <!-- Portfolio 入口 -->
                     <div class="home-icon-container">
                         <div class="w-32 h-32 bg-pixelWhite pixel-border mx-auto flex items-center justify-center mb-4 cursor-pointer" onclick="navigateTo('portfolio')">
-                            <!-- 替换为你的Portfolio DOTOWN图片 -->
                             <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/05/other_filebox_01.png" alt="文件盒像素图，代表作品集" class="w-full h-full object-contain pixel-icon">
                         </div>
                         <button class="pixel-button bg-pixelRed text-pixelWhite px-6 py-3 text-sm sm:text-base" onclick="navigateTo('portfolio')">Portfolio</button>
                     </div>
                     
-                    <!-- Hobbies 入口 - 使用提供的DOTOWN图片 -->
                     <div class="home-icon-container">
                         <div class="w-32 h-32 bg-pixelWhite pixel-border mx-auto flex items-center justify-center mb-4 cursor-pointer" onclick="navigateTo('hobbies')">
-                            <!-- 使用提供的DOTOWN游戏手柄图片 -->
                             <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/town_planet_01.png" alt="游戏手柄像素图，代表兴趣爱好" class="w-full h-full object-contain pixel-icon">
                         </div>
                         <button class="pixel-button bg-pixelRed text-pixelWhite px-6 py-3 text-sm sm:text-base" onclick="navigateTo('hobbies')">Hobbies</button>
@@ -248,14 +225,11 @@
             </div>
         </div>
         
-        <!-- About Me 页面 - 完全符合整体像素风格 -->
         <div id="about" class="page hidden min-h-screen p-6 relative">
-            <!-- 顶部装饰条 -->
             <div class="w-full h-12 bg-pixelRed mb-8 relative overflow-hidden">
                 <div class="snowflakes"></div>
             </div>
             
-            <!-- 返回按钮 -->
             <button class="pixel-button bg-pixelBlack text-pixelWhite px-4 py-2 mb-8" onclick="navigateTo('homepage')">
                 <i class="fa fa-arrow-left mr-2"></i> Back
             </button>
@@ -263,22 +237,20 @@
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl text-pixelRed pixel-text mb-8 text-center">About Me</h2>
                 
-                <!-- 简介框 -->
                 <div class="bg-pixelWhite p-6 md:p-8 pixel-border mb-8">
                     <p class="mb-6 leading-relaxed">Hello! I'm Sinclair Lin, a creative content professional blending retro pixel aesthetics with modern communication skills. Passionate about turning ideas into engaging stories, I bridge journalism, content operations, and multimedia production – always curious to merge the old-school charm with new-age creativity.</p>
                 </div>
                 
-                <!-- 教育经历和工作经验 -->
                 <h2 class="text-2xl text-pixelRed pixel-text mb-6 text-center">Education & Experience</h2>
                 <div class="bg-pixelWhite p-6 md:p-8 pixel-border mb-8">
                     <ul class="space-y-6">
                         <li class="flex">
                             <div class="mr-4 mt-1">
                                 <div class="w-8 h-8 bg-pixelRed rounded-full flex items-center justify-center p-1">
-    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/town_school_01.png" 
-         alt="学校建筑图标" 
-         class="w-full h-full object-contain pixel-icon">
-</div>
+                                    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/town_school_01.png" 
+                                         alt="学校建筑图标" 
+                                         class="w-full h-full object-contain pixel-icon">
+                                </div>
                             </div>
                             <div>
                                 <p class="font-bold">2023.9 - 2025.6</p>
@@ -289,11 +261,11 @@
                         </li>
                         <li class="flex">
                             <div class="mr-4 mt-1">
-                               <div class="w-8 h-8 bg-pixelRed rounded-full flex items-center justify-center p-1">
-    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/town_school_01.png" 
-         alt="学校建筑图标" 
-         class="w-full h-full object-contain pixel-icon">
-</div>
+                                <div class="w-8 h-8 bg-pixelRed rounded-full flex items-center justify-center p-1">
+                                    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/town_school_01.png" 
+                                         alt="学校建筑图标" 
+                                         class="w-full h-full object-contain pixel-icon">
+                                </div>
                             </div>
                             <div>
                                 <p class="font-bold">2018.9 - 2022.6</p>
@@ -305,10 +277,10 @@
                         <li class="flex">
                             <div class="mr-4 mt-1">
                                 <div class="w-8 h-8 bg-pixelBlue rounded-full flex items-center justify-center p-1">
-    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2023/12/give_tape_01.png" 
-         alt="胶带图标" 
-         class="w-full h-full object-contain pixel-icon">
-</div>
+                                    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2023/12/give_tape_01.png" 
+                                         alt="胶带图标" 
+                                         class="w-full h-full object-contain pixel-icon">
+                                </div>
                             </div>
                             <div>
                                 <p class="font-bold">2024.9 - 2024.11</p>
@@ -320,10 +292,10 @@
                         <li class="flex">
                             <div class="mr-4 mt-1">
                                 <div class="w-8 h-8 bg-pixelBlue rounded-full flex items-center justify-center p-1">
-    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2023/12/give_tape_01.png" 
-         alt="胶带图标" 
-         class="w-full h-full object-contain pixel-icon">
-</div>
+                                    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2023/12/give_tape_01.png" 
+                                         alt="胶带图标" 
+                                         class="w-full h-full object-contain pixel-icon">
+                                </div>
                             </div>
                             <div>
                                 <p class="font-bold">2020.7 - 2021.5</p>
@@ -334,11 +306,11 @@
                         </li>
                         <li class="flex">
                             <div class="mr-4 mt-1">
-                               <div class="w-8 h-8 bg-pixelBlue rounded-full flex items-center justify-center p-1">
-    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2023/12/give_tape_01.png" 
-         alt="胶带图标" 
-         class="w-full h-full object-contain pixel-icon">
-</div>
+                                <div class="w-8 h-8 bg-pixelBlue rounded-full flex items-center justify-center p-1">
+                                    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2023/12/give_tape_01.png" 
+                                         alt="胶带图标" 
+                                         class="w-full h-full object-contain pixel-icon">
+                                </div>
                             </div>
                             <div>
                                 <p class="font-bold">2022.1 - 2022.4</p>
@@ -350,59 +322,55 @@
                     </ul>
                 </div>
                 
-                <!-- 技能徽章 -->
                 <h2 class="text-2xl text-pixelRed pixel-text mb-6 text-center">Skill Badges</h2>
                 <div class="bg-pixelWhite p-6 md:p-8 pixel-border">
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
                         <div class="text-center">
                             <div class="w-16 h-16 bg-pixelBlack rounded-full flex items-center justify-center mx-auto mb-4">
-                               <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/05/other_book_04.png" 
-     alt="书籍图标，代表写作技能" 
-     class="w-full h-full object-contain pixel-icon">
+                                <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/05/other_book_04.png" 
+                                     alt="书籍图标，代表写作技能" 
+                                     class="w-full h-full object-contain pixel-icon">
                             </div>
                             <p>Writing</p>
                         </div>
                         <div class="text-center">
                             <div class="w-16 h-16 bg-pixelBlack rounded-full flex items-center justify-center mx-auto mb-4">
                                 <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/other_painting_04.png" 
-     alt="画，代表设计" 
-     class="w-full h-full object-contain pixel-icon">
+                                     alt="画，代表设计" 
+                                     class="w-full h-full object-contain pixel-icon">
                             </div>
                             <p>Canva/PS</p>
                         </div>
                         <div class="text-center">
-                           <div class="w-16 h-16 bg-pixelBlack rounded-full flex items-center justify-center mx-auto mb-4">
-                                 <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/maede_unit_web_01.png" 
-     alt="电脑，代表AI" 
-     class="w-full h-full object-contain pixel-icon">
+                            <div class="w-16 h-16 bg-pixelBlack rounded-full flex items-center justify-center mx-auto mb-4">
+                                <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/maede_unit_web_01.png" 
+                                     alt="电脑，代表AI" 
+                                     class="w-full h-full object-contain pixel-icon">
                             </div>
                             <p>ChatGPT/Cursor</p>
                         </div>
                         <div class="text-center">
                             <div class="w-16 h-16 bg-pixelBlack rounded-full flex items-center justify-center mx-auto mb-4">
-                               <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/other_television_01.png" 
-     alt="电视，代表剪辑" 
-     class="w-full h-full object-contain pixel-icon">
+                                <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/other_television_01.png" 
+                                     alt="电视，代表剪辑" 
+                                     class="w-full h-full object-contain pixel-icon">
                             </div>
                             <p>CapCut</p>
                         </div>
                         <div class="text-center">
                             <div class="w-16 h-16 bg-pixelBlack rounded-full flex items-center justify-center mx-auto mb-4">
-                                                               <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/07/other_speaker_01.png" 
-     alt="喇叭，代表语言" 
-     class="w-full h-full object-contain pixel-icon">
+                                <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/07/other_speaker_01.png" 
+                                     alt="喇叭，代表语言" 
+                                     class="w-full h-full object-contain pixel-icon">
                             </div>
                             <p>Eng(CET-6 612)/Mandarin</p>
                         </div>
-                       
                     </div>
                 </div>
             </div>
         </div>
         
-        <!-- Portfolio 页面 - 修改后的布局 -->
         <div id="portfolio" class="page hidden min-h-screen p-6">
-            <!-- 返回按钮 -->
             <button class="pixel-button bg-pixelBlack text-pixelWhite px-4 py-2 mb-8" onclick="navigateTo('homepage')">
                 <i class="fa fa-arrow-left mr-2"></i> Back
             </button>
@@ -410,7 +378,6 @@
             <div class="max-w-6xl mx-auto">
                 <h2 class="text-3xl text-pixelRed pixel-text mb-10 text-center">Portfolio</h2>
                 
-                <!-- 像素网格背景 -->
                 <div class="relative">
                     <div class="absolute inset-0 opacity-10 z-0">
                         <div class="grid grid-cols-8 grid-rows-8 h-full">
@@ -430,16 +397,13 @@
                             <div class="border border-pixelBlack"></div>
                             <div class="border border-pixelBlack bg-pixelRed"></div>
                             <div class="border border-pixelBlack"></div>
-                            <!-- 重复像素模式 -->
                         </div>
                     </div>
                     
-                    <!-- 作品卡片 - 精简为3个项目 -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 z-10 relative">
-                        <!-- 作品 1: Xiaoyuzhou FM -->
+                    <!-- 4个卡片并排布局 -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 z-10 relative">
                         <div class="pixel-card bg-pixelWhite p-4 pixel-border">
                             <div class="w-full h-48 mb-4 bg-pixelBlack flex items-center justify-center">
-                                <!-- 小宇宙FM像素图标 -->
                                 <div class="w-32 h-32 flex items-center justify-center">
                                     <div class="w-24 h-24 bg-pixelPurple rounded-full flex items-center justify-center">
                                         <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/other_ufo_01.png" alt="UFO" class="w-full h-full object-contain pixel-icon">
@@ -451,10 +415,8 @@
                             <button class="pixel-button bg-pixelRed text-pixelWhite px-3 py-1 text-xs w-full" onclick="showProjectDetails('xiaoyuzhou-fm')">View Details</button>
                         </div>
                         
-                        <!-- 作品 2: China Youth Media -->
                         <div class="pixel-card bg-pixelWhite p-4 pixel-border">
                             <div class="w-full h-48 mb-4 bg-pixelBlack flex items-center justify-center">
-                                <!-- 中国青年媒体像素图标 -->
                                 <div class="w-32 h-32 flex items-center justify-center">
                                     <div class="w-24 h-24 bg-pixelBlue rounded-full flex items-center justify-center">
                                         <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/person_kindergarten_children_02.png" alt="制服学校" class="w-full h-full object-contain pixel-icon">
@@ -466,13 +428,11 @@
                             <button class="pixel-button bg-pixelRed text-pixelWhite px-3 py-1 text-xs w-full" onclick="showProjectDetails('china-youth-media')">View Details</button>
                         </div>
                         
-                        <!-- 作品 3: Yangcheng Evening News -->
                         <div class="pixel-card bg-pixelWhite p-4 pixel-border">
                             <div class="w-full h-48 mb-4 bg-pixelBlack flex items-center justify-center">
-                                <!-- 羊城晚报像素图标 -->
                                 <div class="w-32 h-32 flex items-center justify-center">
                                     <div class="w-24 h-24 bg-pixelOrange rounded-full flex items-center justify-center">
-                                       <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/thing_sheep_01.png" alt="绵羊图标" class="w-full h-full object-contain pixel-icon">
+                                        <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/thing_sheep_01.png" alt="绵羊图标" class="w-full h-full object-contain pixel-icon">
                                     </div>
                                 </div>
                             </div>
@@ -480,77 +440,77 @@
                             <p class="text-sm mb-4">Established news outlet covering local and national news.</p>
                             <button class="pixel-button bg-pixelRed text-pixelWhite px-3 py-1 text-xs w-full" onclick="showProjectDetails('yangcheng-evening-news')">View Details</button>
                         </div>
+
+                        <!-- 面包测评卡片 - 已修改：白底圆圈+像素面包，文件夹全绿色 -->
+                        <div class="pixel-card bg-pixelWhite p-4 pixel-border">
+                            <div class="w-full h-48 mb-4 bg-pixelBlack flex items-center justify-center">
+                                <div class="w-32 h-32 flex items-center justify-center">
+                                    <div class="w-24 h-24 bg-pixelWhite rounded-full flex items-center justify-center">
+                                        <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/food_plain_bread_01.png" alt="像素面包" class="w-16 h-16 object-contain pixel-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="text-xl mb-2">Bread Review</h3>
+                            <p class="text-sm mb-4">Bread tasting reviews from different time and moods.</p>
+                            <button class="pixel-button bg-pixelRed text-pixelWhite px-3 py-1 text-xs w-full" onclick="showProjectDetails('bread-review')">View Details</button>
+                        </div>
                     </div>
                 </div>
 
-               <!-- ====================== 【新增：照片作品栏目】 ====================== -->
-<div class="mt-16 relative z-10">
-    <h2 class="text-2xl text-pixelRed pixel-text mb-8 text-center">My Photography Works</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- 照片1：海边霓虹夜景 -->
-        <div class="pixel-card bg-pixelWhite p-4 pixel-border aspect-square flex flex-col justify-center items-center">
-            <img src="https://pic1.imgdb.cn/item/6a1273666211f5ac19ee9d8f.jpg" 
-                 alt="Neon Night View" 
-                 class="w-4/5 h-4/5 object-contain pixel-icon mb-3">
-            <p class="text-center mt-3 text-sm">Neon Night</p>
-        </div>
-        <!-- 照片2：海边日出建筑 -->
-        <div class="pixel-card bg-pixelWhite p-4 pixel-border aspect-square flex flex-col justify-center items-center">
-            <img src="https://pic1.imgdb.cn/item/6a1273666211f5ac19ee9d92.jpg" 
-                 alt="Dawn Seaside Building" 
-                 class="w-4/5 h-4/5 object-contain pixel-icon mb-3">
-            <p class="text-center mt-3 text-sm">Coastal Dawn</p>
-        </div>
-        <!-- 照片3：月下雕塑 -->
-        <div class="pixel-card bg-pixelWhite p-4 pixel-border aspect-square flex flex-col justify-center items-center">
-            <img src="https://pic1.imgdb.cn/item/6a1273686211f5ac19ee9d93.jpg" 
-                 alt="Moon & Sculpture" 
-                 class="w-4/5 h-4/5 object-contain pixel-icon mb-3">
-            <p class="text-center mt-3 text-sm">Moonlit Sculpture</p>
-        </div>
-        <!-- 照片4：海边日出 -->
-        <div class="pixel-card bg-pixelWhite p-4 pixel-border aspect-square flex flex-col justify-center items-center">
-            <img src="https://pic1.imgdb.cn/item/6a1273766211f5ac19ee9d9b.jpg" 
-                 alt="Seaside Sunrise" 
-                 class="w-4/5 h-4/5 object-contain pixel-icon mb-3">
-            <p class="text-center mt-3 text-sm">Golden Sunrise</p>
-        </div>
-        <!-- 照片5：海上海鸥 -->
-        <div class="pixel-card bg-pixelWhite p-4 pixel-border aspect-square flex flex-col justify-center items-center">
-            <img src="https://pic1.imgdb.cn/item/6a1273726211f5ac19ee9d9a.jpg" 
-                 alt="Seagulls Over Sea" 
-                 class=w-4/5 h-4/5 object-contain pixel-icon mb-3">
-            <p class="text-center mt-3 text-sm">Flying Seagulls</p>
-        </div>
-        <!-- 照片6：波光海面 -->
-        <div class="pixel-card bg-pixelWhite p-4 pixel-border aspect-square flex flex-col justify-center items-center">
-            <img src="https://pic1.imgdb.cn/item/6a1275576211f5ac19ee9e71.jpg" 
-                 alt="Sparkling Water" 
-                 class="w-4/5 h-4/5 object-contain pixel-icon mb-3">
-            <p class="text-center mt-3 text-sm">Sparkling Waves</p>
-        </div>
-    </div>
-</div>
-<!-- ==================================================================== -->
-
+                <div class="mt-16 relative z-10">
+                    <h2 class="text-2xl text-pixelRed pixel-text mb-8 text-center">My Photography Works</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="pixel-card bg-pixelWhite p-4 pixel-border aspect-square flex flex-col justify-center items-center">
+                            <img src="https://pic1.imgdb.cn/item/6a1273666211f5ac19ee9d8f.jpg" 
+                                 alt="Neon Night View" 
+                                 class="w-4/5 h-4/5 object-contain pixel-icon mb-3">
+                            <p class="text-center mt-3 text-sm">Neon Night</p>
+                        </div>
+                        <div class="pixel-card bg-pixelWhite p-4 pixel-border aspect-square flex flex-col justify-center items-center">
+                            <img src="https://pic1.imgdb.cn/item/6a1273666211f5ac19ee9d92.jpg" 
+                                 alt="Dawn Seaside Building" 
+                                 class="w-4/5 h-4/5 object-contain pixel-icon mb-3">
+                            <p class="text-center mt-3 text-sm">Coastal Dawn</p>
+                        </div>
+                        <div class="pixel-card bg-pixelWhite p-4 pixel-border aspect-square flex flex-col justify-center items-center">
+                            <img src="https://pic1.imgdb.cn/item/6a1273686211f5ac19ee9d93.jpg" 
+                                 alt="Moon & Sculpture" 
+                                 class="w-4/5 h-4/5 object-contain pixel-icon mb-3">
+                            <p class="text-center mt-3 text-sm">Moonlit Sculpture</p>
+                        </div>
+                        <div class="pixel-card bg-pixelWhite p-4 pixel-border aspect-square flex flex-col justify-center items-center">
+                            <img src="https://pic1.imgdb.cn/item/6a1273766211f5ac19ee9d9b.jpg" 
+                                 alt="Seaside Sunrise" 
+                                 class="w-4/5 h-4/5 object-contain pixel-icon mb-3">
+                            <p class="text-center mt-3 text-sm">Golden Sunrise</p>
+                        </div>
+                        <div class="pixel-card bg-pixelWhite p-4 pixel-border aspect-square flex flex-col justify-center items-center">
+                            <img src="https://pic1.imgdb.cn/item/6a1273726211f5ac19ee9d9a.jpg" 
+                                 alt="Seagulls Over Sea" 
+                                 class="w-4/5 h-4/5 object-contain pixel-icon mb-3">
+                            <p class="text-center mt-3 text-sm">Flying Seagulls</p>
+                        </div>
+                        <div class="pixel-card bg-pixelWhite p-4 pixel-border aspect-square flex flex-col justify-center items-center">
+                            <img src="https://pic1.imgdb.cn/item/6a1275576211f5ac19ee9e71.jpg" 
+                                 alt="Sparkling Water" 
+                                 class="w-4/5 h-4/5 object-contain pixel-icon mb-3">
+                            <p class="text-center mt-3 text-sm">Sparkling Waves</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <!-- 作品详情模态框 - 文件夹风格 -->
             <div id="project-modal" class="fixed inset-0 bg-pixelBlack bg-opacity-80 flex items-center justify-center z-50 hidden">
                 <div class="bg-pixelWhite max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 pixel-border relative">
                     <button class="absolute top-4 right-4 text-pixelBlack text-xl" onclick="hideProjectDetails()">
                         <i class="fa fa-times"></i>
                     </button>
-                    <div id="project-details-content" class="mt-6">
-                        <!-- 内容将通过JavaScript动态填充 -->
-                    </div>
+                    <div id="project-details-content" class="mt-6"></div>
                 </div>
             </div>
         </div>
         
-        <!-- Hobbies 页面 -->
         <div id="hobbies" class="page hidden min-h-screen p-6 relative">
-            <!-- 顶部装饰 -->
             <div class="w-full h-16 mb-8 relative">
                 <div class="absolute inset-0 flex justify-around items-center">
                     <div class="w-10 h-10 bg-pixelRed rounded-full flex items-center justify-center">
@@ -571,7 +531,6 @@
                 </div>
             </div>
             
-            <!-- 返回按钮 -->
             <button class="pixel-button bg-pixelBlack text-pixelWhite px-4 py-2 mb-8" onclick="navigateTo('homepage')">
                 <i class="fa fa-arrow-left mr-2"></i> Back
             </button>
@@ -579,7 +538,6 @@
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl text-pixelRed pixel-text mb-12 text-center">My Hobbies</h2>
                 
-                <!-- 像素化多彩背景 -->
                 <div class="relative bg-pixelWhite p-8 pixel-border mb-8">
                     <div class="absolute inset-0 opacity-5 z-0">
                         <div class="grid grid-cols-16 grid-rows-16 h-full">
@@ -588,23 +546,19 @@
                             <div class="col-span-2 row-span-2 bg-pixelGreen col-start-9"></div>
                             <div class="col-span-2 row-span-2 bg-pixelYellow col-start-13"></div>
                             <div class="col-span-2 row-span-2 bg-pixelPurple row-start-3"></div>
-                            <!-- 重复像素模式 -->
                         </div>
                     </div>
                     
                     <p class="text-center mb-10 relative z-10">Beyond creating pixel art, I have a variety of interests that keep me inspired and entertained. Click on any of the icons below to learn more!</p>
                     
-                    <!-- 兴趣子入口 - 调整顺序 -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 relative z-10">
-                        <!-- Reading - 左上第一格 -->
                         <div class="pixel-card bg-pixelWhite p-6 pixel-border text-center cursor-pointer" onclick="navigateTo('reading')">
                             <div class="w-24 h-24 flex items-center justify-center mx-auto mb-4">
                                 <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/05/other_book.png" 
-     alt="书" 
-     class="w-full h-full object-contain pixel-icon">
+                                     alt="书" 
+                                     class="w-full h-full object-contain pixel-icon">
                             </div>
                             <h3 class="text-2xl text-pixelBlue">Reading</h3>
-                            <!-- 添加阅读统计 -->
                             <p class="stats-text">Since December 13, 2021, I have read 
                                 <button class="count-btn minus pixel-button" data-target="book-count" onclick="event.stopPropagation()">-</button>
                                 <span id="book-count" class="book-count checkerboard-text mx-2">140</span>
@@ -613,15 +567,13 @@
                             </p>
                         </div>
                         
-                        <!-- Movies - 右上第二格 -->
                         <div class="pixel-card bg-pixelWhite p-6 pixel-border text-center cursor-pointer" onclick="navigateTo('movies')">
                             <div class="w-24 h-24 flex items-center justify-center mx-auto mb-4">
                                 <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/07/other_ticket_01.png" 
-     alt="票" 
-     class="w-full h-full object-contain pixel-icon">
+                                     alt="票" 
+                                     class="w-full h-full object-contain pixel-icon">
                             </div>
                             <h3 class="text-2xl text-pixelGreen">Movies</h3>
-                            <!-- 添加电影统计 -->
                             <p class="stats-text">Since December 13, 2021, I have watched 
                                 <button class="count-btn minus pixel-button" data-target="movie-count" onclick="event.stopPropagation()">-</button>
                                 <span id="movie-count" class="movie-count checkerboard-text mx-2">281</span>
@@ -630,22 +582,20 @@
                             </p>
                         </div>
                         
-                        <!-- KPop - 左下第三格 -->
                         <div class="pixel-card bg-pixelWhite p-6 pixel-border text-center cursor-pointer" onclick="navigateTo('kpop')">
-                          <div class="w-24 h-24 flex items-center justify-center mx-auto mb-4"> 
-<img src="https://dotown.maeda-design-room.net/wp-content/uploads/2024/09/town_kyoceramicdome_01.png" 
-     alt="巨蛋" 
-     class="w-full h-full object-contain pixel-icon">
+                            <div class="w-24 h-24 flex items-center justify-center mx-auto mb-4"> 
+                                <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2024/09/town_kyoceramicdome_01.png" 
+                                     alt="巨蛋" 
+                                     class="w-full h-full object-contain pixel-icon">
                             </div>
                             <h3 class="text-2xl text-pixelRed">K-pop</h3>
                         </div>
                         
-                        <!-- Traveling - 右下第四格 -->
                         <div class="pixel-card bg-pixelWhite p-6 pixel-border text-center cursor-pointer" onclick="navigateTo('traveling')">
                             <div class="w-24 h-24 flex items-center justify-center mx-auto mb-4">
-                               <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2024/09/vehicle_plane_01.png" 
-     alt="飞机" 
-     class="w-full h-full object-contain pixel-icon">
+                                <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2024/09/vehicle_plane_01.png" 
+                                     alt="飞机" 
+                                     class="w-full h-full object-contain pixel-icon">
                             </div>
                             <h3 class="text-2xl text-pixelYellow">Traveling</h3>
                         </div>
@@ -654,9 +604,7 @@
             </div>
         </div>
         
-        <!-- K-pop 页面 -->
         <div id="kpop" class="page hidden min-h-screen p-6">
-            <!-- 返回按钮 -->
             <button class="pixel-button bg-pixelBlack text-pixelWhite px-4 py-2 mb-8" onclick="navigateTo('hobbies')">
                 <i class="fa fa-arrow-left mr-2"></i> Back to Hobbies
             </button>
@@ -664,7 +612,6 @@
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl text-pixelRed pixel-text mb-8 text-center">K-pop</h2>
                 
-                <!-- 像素化舞台背景 -->
                 <div class="relative bg-pixelBlack p-6 mb-8">
                     <div class="absolute inset-0 opacity-30">
                         <div class="grid grid-cols-20 grid-rows-10 h-full">
@@ -672,7 +619,6 @@
                             <div class="col-span-1 row-span-1 bg-pixelRed col-start-4 row-start-2"></div>
                             <div class="col-span-1 row-span-1 bg-pixelRed col-start-6 row-start-4"></div>
                             <div class="col-span-1 row-span-1 bg-pixelRed col-start-8 row-start-2"></div>
-                            <!-- 右侧重复 -->
                             <div class="col-span-1 row-span-1 bg-pixelRed col-start-13 row-start-3"></div>
                             <div class="col-span-1 row-span-1 bg-pixelRed col-start-15 row-start-2"></div>
                             <div class="col-span-1 row-span-1 bg-pixelRed col-start-17 row-start-4"></div>
@@ -695,14 +641,12 @@
                             </div>
                         </div>
                         
-                        <!-- 像素化音乐播放器 - 可实际播放音乐 -->
                         <div class="bg-pixelBlack p-4 pixel-border border-pixelWhite max-w-md mx-auto mb-8">
                             <h4 class="text-xl mb-4 text-center">Currently Listening To</h4>
                             
-                           <!-- 音频元素 - 隐藏但实际工作 -->
-<audio id="music-player" src="hobby/UNIOR-D&E - 그럴듯한 가설 (Plausible Theory)_hires.mp3" preload="metadata">
-    您的浏览器不支持音频播放
- </audio>
+                            <audio id="music-player" src="hobby/UNIOR-D&E - 그럴듯한 가설 (Plausible Theory)_hires.mp3" preload="metadata">
+                                您的浏览器不支持音频播放
+                            </audio>
                             
                             <div class="flex items-center justify-between mb-4">
                                 <button class="pixel-button bg-pixelRed text-pixelWhite w-10 h-10 flex items-center justify-center" id="prev-button">
@@ -716,13 +660,11 @@
                                 </button>
                             </div>
                             
-                            <!-- 进度条 -->
                             <div class="w-full progress-bar mb-2" id="progress-bar">
                                 <div class="progress-bar-fill" id="progress-bar-fill" style="width: 16%"></div>
                                 <div class="progress-bar-handle" id="progress-handle" style="left: 16%"></div>
                             </div>
                             
-                            <!-- 时间显示 -->
                             <p class="text-sm text-center" id="time-display">Plausible Theory - D&E (0:44 / 2:41)</p>
                         </div>
                     </div>
@@ -730,9 +672,7 @@
             </div>
         </div>
         
-        <!-- 其他页面保持不变 -->
         <div id="reading" class="page hidden min-h-screen p-6">
-            <!-- 返回按钮 -->
             <button class="pixel-button bg-pixelBlack text-pixelWhite px-4 py-2 mb-8" onclick="navigateTo('hobbies')">
                 <i class="fa fa-arrow-left mr-2"></i> Back to Hobbies
             </button>
@@ -740,7 +680,6 @@
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl text-pixelBlue pixel-text mb-8 text-center">Reading</h2>
                 
-                <!-- 像素化书架背景 -->
                 <div class="relative bg-pixelWhite p-6 pixel-border mb-8">
                     <div class="absolute inset-0 opacity-10 z-0">
                         <div class="grid grid-cols-20 grid-rows-10 h-full">
@@ -758,9 +697,7 @@
                         
                         <h3 class="text-2xl mb-6 text-pixelBlue">Favorite Books</h3>
                         
-                        <!-- 像素化书籍展示 - 修改为四本书 -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-                            <!-- 书籍 1 -->
                             <div class="pixel-card bg-pixelWhite p-4 pixel-border">
                                 <div class="w-full h-40 mb-4 bg-pixelRed flex items-center justify-center">
                                     <div class="w-24 h-36 bg-pixelWhite p-2">
@@ -779,7 +716,6 @@
                                 <p class="text-xs"> Her pen operates like a scalpel, dissecting life’s tender illusions to expose its raw, bleeding reality before my eyes.</p>
                             </div>
                             
-                            <!-- 书籍 2 -->
                             <div class="pixel-card bg-pixelWhite p-4 pixel-border">
                                 <div class="w-full h-40 mb-4 bg-pixelBlue flex items-center justify-center">
                                     <div class="w-24 h-36 bg-pixelWhite p-2">
@@ -798,7 +734,6 @@
                                 <p class="text-xs">This book was Ae-ran’s first smile at me—hurried but sincere, like a stranger’s unexpected kindness in a crowded street.</p>
                             </div>
                             
-                            <!-- 书籍 3 -->
                             <div class="pixel-card bg-pixelWhite p-4 pixel-border">
                                 <div class="w-full h-40 mb-4 bg-pixelGreen flex items-center justify-center">
                                     <div class="w-24 h-36 bg-pixelWhite p-2">
@@ -817,7 +752,6 @@
                                 <p class="text-xs">I have been blessed by their legacy. To honor their memory, I will keep declaring myself a feminist—now and always.</p>
                             </div>
                             
-                            <!-- 书籍 4 - 新增书籍 -->
                             <div class="pixel-card bg-pixelWhite p-4 pixel-border">
                                 <div class="w-full h-40 mb-4 bg-pixelPurple flex items-center justify-center">
                                     <div class="w-24 h-36 bg-pixelWhite p-2">
@@ -837,7 +771,6 @@
                             </div>
                         </div>
                         
-                        <!-- 像素化阅读灯 -->
                         <div class="flex justify-center mb-8">
                             <div class="w-48 h-24 relative">
                                 <div class="w-4 h-20 bg-pixelBlack mx-auto"></div>
@@ -847,7 +780,6 @@
                             </div>
                         </div>
                         
-                        <!-- 读书摘记 - 保持不变 -->
                         <div class="bg-pixelBlack bg-opacity-5 p-5 rounded-lg border-l-4 border-pixelBlue mb-6">
                             <h4 class="text-xl mb-3">Favorite Quote</h4>
                             <div class="flex">
@@ -862,7 +794,6 @@
         </div>
         
         <div id="movies" class="page hidden min-h-screen p-6">
-            <!-- 返回按钮 -->
             <button class="pixel-button bg-pixelBlack text-pixelWhite px-4 py-2 mb-8" onclick="navigateTo('hobbies')">
                 <i class="fa fa-arrow-left mr-2"></i> Back to Hobbies
             </button>
@@ -870,7 +801,6 @@
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl text-pixelGreen pixel-text mb-8 text-center">Movie Watching</h2>
                 
-                <!-- 像素化影院背景 -->
                 <div class="relative bg-pixelBlack p-6 mb-8">
                     <div class="absolute inset-0 opacity-20">
                         <div class="grid grid-cols-20 grid-rows-10 h-full">
@@ -882,7 +812,6 @@
                             <div class="col-span-1 row-span-1 bg-pixelWhite col-start-13 row-start-7"></div>
                             <div class="col-span-1 row-span-1 bg-pixelWhite col-start-15 row-start-7"></div>
                             <div class="col-span-1 row-span-1 bg-pixelWhite col-start-17 row-start-7"></div>
-                            <!-- 第二排 -->
                             <div class="col-span-1 row-span-1 bg-pixelWhite col-start-2 row-start-8"></div>
                             <div class="col-span-1 row-span-1 bg-pixelWhite col-start-4 row-start-8"></div>
                             <div class="col-span-1 row-span-1 bg-pixelWhite col-start-6 row-start-8"></div>
@@ -900,9 +829,7 @@
                         
                         <h3 class="text-2xl mb-6 text-pixelGreen">Favorite Films</h3>
                         
-                        <!-- 像素化电影海报 -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-                            <!-- 电影 1 -->
                             <div class="pixel-card bg-pixelBlack p-4 pixel-border border-pixelWhite">
                                 <div class="w-full h-48 mb-4 bg-pixelRed flex items-center justify-center">
                                     <div class="w-32 h-40 bg-pixelBlack p-2">
@@ -922,7 +849,6 @@
                                 <p class="text-xs">The moment of explosion is soundless — just as destruction always comes to us belatedly.</p>
                             </div>
                             
-                            <!-- 电影 2 -->
                             <div class="pixel-card bg-pixelBlack p-4 pixel-border border-pixelWhite">
                                 <div class="w-full h-48 mb-4 bg-pixelBlue flex items-center justify-center">
                                     <div class="w-32 h-40 bg-pixelBlack p-2">
@@ -943,7 +869,6 @@
                             </div>
                         </div>
                         
-                        <!-- 像素化放映机 -->
                         <div class="flex justify-center mb-8">
                             <div class="w-64 h-24 relative">
                                 <div class="w-16 h-16 bg-pixelGray rounded-full absolute left-0"></div>
@@ -953,7 +878,6 @@
                             </div>
                         </div>
                         
-                        <!-- 像素化观影票 -->
                         <div class="bg-pixelWhite text-pixelBlack p-4 pixel-border max-w-md mx-auto">
                             <div class="flex justify-between items-center mb-2">
                                 <h4 class="font-bold">Next Watch</h4>
@@ -969,7 +893,6 @@
                             </div>
                         </div>
                         
-                        <!-- 电影数量统计 -->
                         <div class="mt-8 text-center">
                             <p class="stats-text">Total movies watched:
                                 <button class="count-btn minus pixel-button" data-target="movie-count-page" onclick="event.stopPropagation()">-</button>
@@ -983,7 +906,6 @@
         </div>
         
         <div id="traveling" class="page hidden min-h-screen p-6">
-            <!-- 返回按钮 -->
             <button class="pixel-button bg-pixelBlack text-pixelWhite px-4 py-2 mb-8" onclick="navigateTo('hobbies')">
                 <i class="fa fa-arrow-left mr-2"></i> Back to Hobbies
             </button>
@@ -991,7 +913,6 @@
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl text-pixelYellow pixel-text mb-8 text-center">Traveling</h2>
                 
-                <!-- 像素化地图背景 -->
                 <div class="relative bg-pixelWhite p-6 pixel-border mb-8">
                     <div class="absolute inset-0 opacity-10 z-0">
                         <div class="w-full h-full bg-pixelBlue">
@@ -999,10 +920,8 @@
                             <div class="absolute top-1/3 left-1/3 w-4 h-4 bg-pixelRed rounded-full"></div>
                             <div class="absolute top-1/2 left-2/3 w-4 h-4 bg-pixelRed rounded-full"></div>
                             <div class="absolute top-2/3 left-1/2 w-4 h-4 bg-pixelRed rounded-full"></div>
-                            
                             <div class="absolute top-1/4 left-2/3 w-4 h-4 bg-pixelRed rounded-full"></div>
                             <div class="absolute top-3/4 left-1/4 w-4 h-4 bg-pixelRed rounded-full"></div>
-                            <!-- 连接线 -->
                             <div class="absolute top-[25%] left-[34%] w-[32%] h-[2%] bg-pixelBlack transform rotate-[20deg]"></div>
                             <div class="absolute top-[50%] left-[50%] w-[17%] h-[2%] bg-pixelBlack transform transform rotate-[-30deg]"></div>
                             <div class="absolute top-[33%] left-[66%] w-[17%] h-[2%] bg-pixelBlack transform rotate-[60deg]"></div>
@@ -1015,66 +934,56 @@
                         
                         <h3 class="text-2xl mb-6 text-pixelYellow">Places I've Visited</h3>
                         
-                        <!-- 旅行目的地 -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                            <!-- 目的地 1 -->
                             <div class="pixel-card bg-pixelWhite p-4 pixel-border">
                                 <div class="w-full h-40 mb-4 bg-pixelBlue flex items-center justify-center">
-                                    <!-- 星星和月亮图片 -->
-<div class="w-24 h-36">
-    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/05/other_moon_01.png" 
-         alt="星星和月亮的像素图" 
-         class="w-full h-full object-contain pixel-icon">
-</div>
+                                    <div class="w-24 h-36">
+                                        <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/05/other_moon_01.png" 
+                                             alt="星星和月亮的像素图" 
+                                             class="w-full h-full object-contain pixel-icon">
+                                    </div>
                                 </div>
                                 <h4 class="text-lg mb-1">Aranya, Qinhuangdao</h4>
                                 <p class="text-sm mb-2">For the first time, I truly saw it—an orange moon rising from the sea, heavy and luminous, like a slow birth of fire.</p>
                             </div>
                             
-                            <!-- 目的地 2 -->
                             <div class="pixel-card bg-pixelWhite p-4 pixel-border">
                                 <div class="w-full h-40 mb-4 bg-pixelBlue flex items-center justify-center">
-                                   <!-- 柿子图片 -->
-<div class="w-24 h-36">
-    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/food_persimmon_01.png" 
-         alt="柿子的像素图" 
-         class="w-full h-full object-contain pixel-icon">
-</div>
+                                    <div class="w-24 h-36">
+                                        <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/food_persimmon_01.png" 
+                                             alt="柿子的像素图" 
+                                             class="w-full h-full object-contain pixel-icon">
+                                    </div>
                                 </div>
                                 <h4 class="text-lg mb-1">Beijing</h4>
                                 <p class="text-sm mb-2">Beijing has slipped into late autumn, and I’ve caught the trees at their gilded peak—every branch dripping with gold.This is how seasons inscribe their passage.</p>
                             </div>
                             
-                            <!-- 目的地 3 -->
                             <div class="pixel-card bg-pixelWhite p-4 pixel-border">
                                 <div class="w-full h-40 mb-4 bg-pixelBlue flex items-center justify-center">
-                                    <!-- 红辣椒图片 -->
-<div class="w-24 h-36">
-    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/food_paprika_01.png" 
-         alt="红辣椒的像素图" 
-         class="w-full h-full object-contain pixel-icon">
-</div>
+                                    <div class="w-24 h-36">
+                                        <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/food_paprika_01.png" 
+                                             alt="红辣椒的像素图" 
+                                             class="w-full h-full object-contain pixel-icon">
+                                    </div>
                                 </div>
                                 <h4 class="text-lg mb-1">Changsha, Hunan</h4>
                                 <p class="text-sm mb-2">The city that like an owl. People love eating rice noodles at night here—it’s such a chill city.</p>
                             </div>
                             
-                            <!-- 目的地 4 -->
                             <div class="pixel-card bg-pixelWhite p-4 pixel-border">
                                 <div class="w-full h-40 mb-4 bg-pixelBlue flex items-center justify-center">
-                                   <!-- 神灯图片 -->
-<div class="w-24 h-36">
-    <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/person_lamp_demon_01.png" 
-         alt="神灯的像素图" 
-         class="w-full h-full object-contain pixel-icon">
-</div>
+                                    <div class="w-24 h-36">
+                                        <img src="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/person_lamp_demon_01.png" 
+                                             alt="神灯的像素图" 
+                                             class="w-full h-full object-contain pixel-icon">
+                                    </div>
                                 </div>
                                 <h4 class="text-lg mb-1">Shanghai</h4>
                                 <p class="text-sm mb-2">First time being a Disney princess! And damn, those pork ribs with rice cakes were so good.</p>
                             </div>
                         </div>
                         
-                        <!-- 像素化行李箱 -->
                         <div class="flex justify-center mb-8">
                             <div class="w-40 h-24 bg-pixelRed relative">
                                 <div class="w-4 h-4 bg-pixelBlack absolute top-4 left-4"></div>
@@ -1085,7 +994,6 @@
                             </div>
                         </div>
                         
-                        <!-- 旅行攻略 -->
                         <div class="bg-pixelYellow bg-opacity-20 p-5 rounded-lg border-l-4 border-pixelYellow mb-6">
                             <h4 class="text-xl mb-3">Travel Tip</h4>
                             <p class="mb-2">Always try the local street food! It's often the most authentic and affordable way to experience a country's cuisine.</p>
@@ -1095,329 +1003,226 @@
                 </div>
             </div>
         </div>
-    
-    
-    <!-- JavaScript -->
+    </div>
+
     <script>
-        // 页面导航功能
+        // 页面导航
         function navigateTo(pageId) {
-            // 隐藏所有页面
             document.querySelectorAll('.page').forEach(page => {
                 page.classList.add('hidden');
                 page.classList.remove('active');
             });
-            
-            // 显示目标页面
             const targetPage = document.getElementById(pageId);
             targetPage.classList.remove('hidden');
             targetPage.classList.add('active');
-            
-            // 滚动到顶部
             window.scrollTo(0, 0);
             
-            // 如果是About页面，添加雪花效果
-            if (pageId === 'about') {
-                createSnowflakes();
-            } else {
-                removeSnowflakes();
-            }
+            if (pageId === 'about') createSnowflakes();
+            else removeSnowflakes();
             
-            // 同步书籍和电影计数
             if (pageId === 'movies') {
-                const mainMovieCount = document.getElementById('movie-count');
-                const pageMovieCount = document.getElementById('movie-count-page');
-                if (mainMovieCount && pageMovieCount) {
-                    pageMovieCount.textContent = mainMovieCount.textContent;
-                }
+                const main = document.getElementById('movie-count');
+                const page = document.getElementById('movie-count-page');
+                if (main && page) page.textContent = main.textContent;
             }
         }
         
-        // 创建雪花效果
+        // 雪花
         function createSnowflakes() {
-            const snowflakesContainer = document.querySelector('.snowflakes');
-            if (!snowflakesContainer) return;
-            
-            snowflakesContainer.innerHTML = '';
-            
-            for (let i = 0; i < 30; i++) {
-                const snowflake = document.createElement('div');
-                snowflake.classList.add('snowflake');
-                snowflake.innerHTML = '❄';
-                snowflake.style.left = `${Math.random() * 100}%`;
-                snowflake.style.top = `-${Math.random() * 20 + 10}px`;
-                snowflake.style.fontSize = `${Math.random() * 10 + 10}px`;
-                snowflake.style.animationDuration = `${Math.random() * 5 + 5}s`;
-                snowflake.style.animationDelay = `${Math.random() * 5}s`;
-                snowflakesContainer.appendChild(snowflake);
+            const container = document.querySelector('.snowflakes');
+            if (!container) return;
+            container.innerHTML = '';
+            for (let i=0; i<30; i++) {
+                const s = document.createElement('div');
+                s.classList.add('snowflake');
+                s.innerHTML = '❄';
+                s.style.left = Math.random()*100+'%';
+                s.style.top = -Math.random()*20-10+'px';
+                s.style.fontSize = Math.random()*10+10+'px';
+                s.style.animationDuration = Math.random()*5+5+'s';
+                s.style.animationDelay = Math.random()*5+'s';
+                container.appendChild(s);
             }
         }
         
-        // 移除雪花效果
         function removeSnowflakes() {
-            const snowflakesContainer = document.querySelector('.snowflakes');
-            if (snowflakesContainer) {
-                snowflakesContainer.innerHTML = '';
-            }
+            const c = document.querySelector('.snowflakes');
+            if (c) c.innerHTML = '';
         }
         
-        // 创建像素化文件夹（最终修复版，正常跳转）
-function createPixelFolder(color, label, url) {
-    const folderContainer = document.createElement('div');
-    folderContainer.className = 'flex flex-col items-center m-4';
-    
-    const folderLink = document.createElement('a');
-    folderLink.href = url;
-    folderLink.target = '_blank'; // 新标签页打开
-    folderLink.className = 'pixel-folder block cursor-pointer';
-    folderLink.style.setProperty('--folder-color', color);
-    
-    const folderBody = document.createElement('div');
-    folderBody.className = 'folder-body';
-    
-    const folderTab = document.createElement('div');
-    folderTab.className = 'folder-tab';
-    
-    folderLink.appendChild(folderBody);
-    folderLink.appendChild(folderTab);
-    
-    const folderLabel = document.createElement('p');
-    folderLabel.className = 'text-xs mt-2 text-center max-w-[64px]';
-    folderLabel.textContent = label;
-    
-    folderContainer.appendChild(folderLink);
-    folderContainer.appendChild(folderLabel);
-
-    // 只保留干净的 a 标签跳转，删除冲突的 onclick！
-    return folderContainer;
-}
+        // 创建文件夹
+        function createPixelFolder(color, label, url) {
+            const wrap = document.createElement('div');
+            wrap.className = 'flex flex-col items-center m-4';
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.target = '_blank';
+            a.className = 'pixel-folder';
+            a.style.setProperty('--folder-color', color);
+            
+            const body = document.createElement('div');
+            body.className = 'folder-body';
+            const tab = document.createElement('div');
+            tab.className = 'folder-tab';
+            a.appendChild(body);
+            a.appendChild(tab);
+            
+            const p = document.createElement('p');
+            p.className = 'text-xs mt-2 text-center max-w-[64px]';
+            p.textContent = label;
+            
+            wrap.appendChild(a);
+            wrap.appendChild(p);
+            return wrap;
+        }
         
-        // 显示作品详情 - 文件夹风格
+        // 弹窗
         function showProjectDetails(projectId) {
             const modal = document.getElementById('project-modal');
             const content = document.getElementById('project-details-content');
-            
-            // 清空内容
             content.innerHTML = '';
             
-            // 创建标题
             const title = document.createElement('h3');
             title.className = 'text-2xl mb-6 text-pixelRed';
             
-            // 创建文件夹容器
             const folderGrid = document.createElement('div');
             folderGrid.className = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8';
             
-            // 根据项目ID填充不同内容
             switch(projectId) {
                 case 'xiaoyuzhou-fm':
                     title.textContent = 'Sheng-Espresso';
-                    
-                    // 添加描述
-                    const desc1 = document.createElement('p');
-                    desc1.className = 'mb-6';
-                    desc1.textContent = 'Featured podcast programs produced for Xiaoyuzhou FM platform:';
-                    content.appendChild(desc1);
-                    
-                    // 添加2个文件夹
-                    folderGrid.appendChild(createPixelFolder(
-                        '#9C27B0', // 紫色
-                        'AI Agent',
-                        'https://www.xiaoyuzhoufm.com/episode/673c757a8d1233fb0d6751b9'
-                    ));
-                    folderGrid.appendChild(createPixelFolder(
-                        '#9C27B0', // 紫色
-                        'Apple’s acquisition traits',
-                        'https://www.xiaoyuzhoufm.com/episode/674341988d1233fb0dabb69b'
-                    ));
+                    const d1 = document.createElement('p');
+                    d1.className = 'mb-6';
+                    d1.textContent = 'Featured podcast programs:';
+                    content.appendChild(d1);
+                    folderGrid.appendChild(createPixelFolder('#9C27B0','AI Agent','https://www.xiaoyuzhoufm.com/episode/673c757a8d1233fb0d6751b9'));
+                    folderGrid.appendChild(createPixelFolder('#9C27B0','Apple’s acquisition traits','https://www.xiaoyuzhoufm.com/episode/674341988d1233fb0dabb69b'));
                     break;
                     
                 case 'china-youth-media':
                     title.textContent = 'China Youth Media';
-                    
-                    // 添加描述
-                    const desc2 = document.createElement('p');
-                    desc2.className = 'mb-6';
-                    desc2.textContent = 'Selected articles published on China Youth Media:';
-                    content.appendChild(desc2);
-                    
-                    // 添加6个文件夹
-                    folderGrid.appendChild(createPixelFolder(
-                        '#2196F3', // 蓝色
-                        'University Life',
-                        'https://mp.weixin.qq.com/s/hn4pF1_yU_3SaNtBSi4dqg'
-                    ));
-                    folderGrid.appendChild(createPixelFolder(
-                        '#2196F3', // 蓝色
-                        'Springtime',
-                        'https://mp.weixin.qq.com/s/CMmXB2ow0FA07-40xlcx3g'
-                    ));
-                    folderGrid.appendChild(createPixelFolder(
-                        '#2196F3', // 蓝色
-                        'Reflecting on Our College Years',
-                        'https://mp.weixin.qq.com/s/aDy1jqKMqV6LdXw2FR0WWA'
-                    ));
-                    folderGrid.appendChild(createPixelFolder(
-                        '#2196F3', // 蓝色
-                        'Nostalgia trap',
-                        'https://mp.weixin.qq.com/s/_thOQET6J_mlKTaZ99o23A'
-                    ));
-                    folderGrid.appendChild(createPixelFolder(
-                        '#2196F3', // 蓝色
-                        'Bipolar disorder',
-                        'https://mp.weixin.qq.com/s/OjBOmN3cR9TJHrEDqn2ssA'
-                    ));
-                    folderGrid.appendChild(createPixelFolder(
-                        '#2196F3', // 蓝色
-                        'Our grandparents',
-                        'https://mp.weixin.qq.com/s/2XvxZ4iGtRwEMjsOUfQ9yw'
-                    ));
+                    const d2 = document.createElement('p');
+                    d2.className = 'mb-6';
+                    d2.textContent = 'Selected articles published on China Youth Media:';
+                    content.appendChild(d2);
+                    folderGrid.appendChild(createPixelFolder('#2196F3','University Life','https://mp.weixin.qq.com/s/hn4pF1_yU_3SaNtBSi4dqg'));
+                    folderGrid.appendChild(createPixelFolder('#2196F3','Springtime','https://mp.weixin.qq.com/s/CMmXB2ow0FA07-40xlcx3g'));
+                    folderGrid.appendChild(createPixelFolder('#2196F3','Reflecting on Our College Years','https://mp.weixin.qq.com/s/aDy1jqKMqV6LdXw2FR0WWA'));
+                    folderGrid.appendChild(createPixelFolder('#2196F3','Nostalgia trap','https://mp.weixin.qq.com/s/_thOQET6J_mlKTaZ99o23A'));
+                    folderGrid.appendChild(createPixelFolder('#2196F3','Bipolar disorder','https://mp.weixin.qq.com/s/OjBOmN3cR9TJHrEDqn2ssA'));
+                    folderGrid.appendChild(createPixelFolder('#2196F3','Our grandparents','https://mp.weixin.qq.com/s/2XvxZ4iGtRwEMjsOUfQ9yw'));
                     break;
                     
                 case 'yangcheng-evening-news':
                     title.textContent = 'Yangcheng Evening News';
+                    const d3 = document.createElement('p');
+                    d3.className = 'mb-6';
+                    d3.textContent = 'Health and education reports published in Yangcheng Evening News:';
+                    content.appendChild(d3);
+                    folderGrid.appendChild(createPixelFolder('#FFA500','How Was Guangzhou‘s Pandemic During CNY? Experts Weigh In','https://mp.weixin.qq.com/s/1RGN3fPqwBEqCdM5o_ws2g'));
+                    break;
                     
-                    // 添加描述
-                    const desc3 = document.createElement('p');
-                    desc3.className = 'mb-6';
-                    desc3.textContent = 'Health and education reports published in Yangcheng Evening News:';
-                    content.appendChild(desc3);
+                // 面包测评弹窗 - 文件夹全部改为绿色
+                case 'bread-review':
+                    title.textContent = 'Bread Review';
+                    const d4 = document.createElement('p');
+                    d4.className = 'mb-6';
+                    d4.textContent = 'My bread tasting reviews:';
+                    content.appendChild(d4);
+                    folderGrid.appendChild(createPixelFolder('#4CAF50','Online Bread','https://www.douban.com/doubanapp/dispatch?uri=%2Fgroup%2Ftopic%2F257041124&_spm_id=MTU2Mzg2OTc0&_i=79763095c087ab7'));
+                    folderGrid.appendChild(createPixelFolder('#4CAF50','Zhanjiang Bread','https://www.douban.com/doubanapp/dispatch?uri=%2Fgroup%2Ftopic%2F269357558&_spm_id=MTU2Mzg2OTc0&_i=79765761c087ab7'));
+                    folderGrid.appendChild(createPixelFolder('#4CAF50','Guangzhou Bread','https://www.douban.com/doubanapp/dispatch?uri=%2Fgroup%2Ftopic%2F256742938&_spm_id=MTU2Mzg2OTc0&_i=79765789c087ab7'));
+                    break;
                     
-                    // 添加1个文件夹
-                    folderGrid.appendChild(createPixelFolder(
-                        '#FFA500', // 橙色
-                        'How Was Guangzhou‘s Pandemic During CNY? Experts Weigh In',
-                        'https://mp.weixin.qq.com/s/1RGN3fPqwBEqCdM5o_ws2g'
-                    ));
+                default:
                     break;
             }
             
-            // 将元素添加到内容容器
             content.appendChild(title);
             content.appendChild(folderGrid);
-            
-            // 显示模态框
             modal.classList.remove('hidden');
         }
         
-        // 隐藏作品详情
         function hideProjectDetails() {
-            const modal = document.getElementById('project-modal');
-            modal.classList.add('hidden');
+            document.getElementById('project-modal').classList.add('hidden');
         }
         
-        // 书籍和电影数量调整功能
+        // 计数器
         function setupCounters() {
-            // 获取所有加减按钮
-            const countButtons = document.querySelectorAll('.count-btn');
-            
-            countButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    // 获取目标计数器ID
-                    const targetId = button.getAttribute('data-target');
-                    const countElement = document.getElementById(targetId);
+            document.querySelectorAll('.count-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const target = document.getElementById(btn.getAttribute('data-target'));
+                    if (!target) return;
+                    let val = parseInt(target.textContent);
+                    if (btn.classList.contains('minus') && val>0) val--;
+                    if (btn.classList.contains('plus')) val++;
+                    target.textContent = val;
                     
-                    if (countElement) {
-                        let count = parseInt(countElement.textContent);
-                        
-                        // 根据按钮类型调整数量
-                        if (button.classList.contains('minus') && count > 0) {
-                            countElement.textContent = count - 1;
-                        } else if (button.classList.contains('plus')) {
-                            countElement.textContent = count + 1;
-                        }
-                        
-                        // 同步电影计数
-                        if (targetId === 'movie-count' || targetId === 'movie-count-page') {
-                            const otherCountId = targetId === 'movie-count' ? 'movie-count-page' : 'movie-count';
-                            const otherCountElement = document.getElementById(otherCountId);
-                            if (otherCountElement) {
-                                otherCountElement.textContent = countElement.textContent;
-                            }
-                        }
+                    if (btn.getAttribute('data-target') === 'movie-count') {
+                        const o = document.getElementById('movie-count-page');
+                        if (o) o.textContent = val;
+                    }
+                    if (btn.getAttribute('data-target') === 'movie-count-page') {
+                        const o = document.getElementById('movie-count');
+                        if (o) o.textContent = val;
                     }
                 });
             });
         }
         
-        // 音乐播放器功能
+        // 播放器
         function setupMusicPlayer() {
-            // 获取DOM元素
             const audio = document.getElementById('music-player');
-            const playPauseButton = document.getElementById('play-pause-button');
-            const progressBar = document.getElementById('progress-bar');
-            const progressBarFill = document.getElementById('progress-bar-fill');
-            const progressHandle = document.getElementById('progress-handle');
-            const timeDisplay = document.getElementById('time-display');
-            const prevButton = document.getElementById('prev-button');
-            const nextButton = document.getElementById('next-button');
+            const btn = document.getElementById('play-pause-button');
+            const bar = document.getElementById('progress-bar');
+            const fill = document.getElementById('progress-bar-fill');
+            const handle = document.getElementById('progress-handle');
+            const time = document.getElementById('time-display');
             
-            // 如果没有找到音频元素，则不设置播放器
             if (!audio) return;
             
-            // 播放/暂停功能
-            playPauseButton.addEventListener('click', () => {
+            btn.addEventListener('click', () => {
                 if (audio.paused) {
                     audio.play();
-                    playPauseButton.innerHTML = '<i class="fa fa-pause text-2xl"></i>';
+                    btn.innerHTML = '<i class="fa fa-pause text-2xl"></i>';
                 } else {
                     audio.pause();
-                    playPauseButton.innerHTML = '<i class="fa fa-play text-2xl"></i>';
+                    btn.innerHTML = '<i class="fa fa-play text-2xl"></i>';
                 }
             });
             
-            // 更新进度条
             audio.addEventListener('timeupdate', () => {
-                const percent = (audio.currentTime / audio.duration) * 100;
-                progressBarFill.style.width = `${percent}%`;
-                progressHandle.style.left = `${percent}%`;
+                const p = (audio.currentTime/audio.duration)*100;
+                fill.style.width = p+'%';
+                handle.style.left = p+'%';
                 
-                // 更新时间显示
-                const currentMinutes = Math.floor(audio.currentTime / 60);
-                const currentSeconds = Math.floor(audio.currentTime % 60);
-                const durationMinutes = Math.floor(audio.duration / 60);
-                const durationSeconds = Math.floor(audio.duration % 60);
-                
-                timeDisplay.textContent = `Plausible Theory - D&E (${currentMinutes}:${currentSeconds.toString().padStart(2, '0')} / ${durationMinutes}:${durationSeconds.toString().padStart(2, '0')})`;
+                const cm = Math.floor(audio.currentTime/60);
+                const cs = Math.floor(audio.currentTime%60).toString().padStart(2,'0');
+                const dm = Math.floor(audio.duration/60);
+                const ds = Math.floor(audio.duration%60).toString().padStart(2,'0');
+                time.textContent = `Plausible Theory - D&E (${cm}:${cs} / ${dm}:${ds})`;
             });
             
-            // 点击进度条跳转
-            progressBar.addEventListener('click', (e) => {
-                const rect = progressBar.getBoundingClientRect();
-                const pos = (e.clientX - rect.left) / rect.width;
-                audio.currentTime = pos * audio.duration;
+            bar.addEventListener('click', e => {
+                const r = bar.getBoundingClientRect();
+                audio.currentTime = ((e.clientX-r.left)/r.width)*audio.duration;
             });
             
-            // 模拟上一曲/下一曲功能
-            prevButton.addEventListener('click', () => {
-                // 实际应用中可以切换到上一首歌曲
-                audio.currentTime = 0;
-            });
-            
-            nextButton.addEventListener('click', () => {
-                // 实际应用中可以切换到下一首歌曲
-                alert('Next song would play here in a full implementation');
-            });
-            
-            // 播放结束时重置
+            document.getElementById('prev-button').addEventListener('click', () => audio.currentTime=0);
+            document.getElementById('next-button').addEventListener('click', () => alert('Next song!'));
             audio.addEventListener('ended', () => {
-                playPauseButton.innerHTML = '<i class="fa fa-play text-2xl"></i>';
+                btn.innerHTML = '<i class="fa fa-play text-2xl"></i>';
                 audio.currentTime = 0;
             });
         }
         
-        // 初始化页面
-        document.addEventListener('DOMContentLoaded', function() {
-            // 确保首页显示
+        // 初始化
+        document.addEventListener('DOMContentLoaded', () => {
             navigateTo('homepage');
-            
-            // 设置音乐播放器
             setupMusicPlayer();
-            
-            // 设置计数器
             setupCounters();
         });
     </script>
-
-
-    
-</body></html>
+</body>
+</html>
